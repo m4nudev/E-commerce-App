@@ -1,11 +1,4 @@
-import {
-  Dimensions,
-  FlatList,
-  Image,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { Dimensions, FlatList, Image, StyleSheet, View } from "react-native";
 import React from "react";
 import { theme } from "../constants/theme";
 const { width } = Dimensions.get("window");
@@ -23,14 +16,6 @@ const images = [
     id: "1C",
     path: require("../../assets/images/fn1.jpg"),
   },
-];
-
-const data = [
-  { id: "1", title: "item 1" },
-  { id: "2", title: "item 2" },
-  { id: "3", title: "item 3" },
-  { id: "4", title: "item 4" },
-  { id: "5", title: "item 5" },
 ];
 
 const HomeCarouselComponent = () => {
@@ -68,5 +53,3 @@ const HomeCarouselComponent = () => {
 };
 
 export default HomeCarouselComponent;
-
-const styles = StyleSheet.create({});
