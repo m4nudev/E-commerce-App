@@ -10,6 +10,7 @@ import {
 } from "@expo-google-fonts/roboto";
 import { useCallback } from "react";
 import BottomTabs from "./src/screens/BottomTabs";
+import ProductDetail from "./src/screens/ProductDetail";
 
 const Stack = createNativeStackNavigator();
 
@@ -56,6 +57,7 @@ export default function App() {
           }}
         />
         <Stack.Screen name="ProductList" component={ProductList} />
+        <Stack.Screen name="product_detail" component={ProductDetail} />
       </Stack.Navigator>
     </NavigationContainer>
   );
